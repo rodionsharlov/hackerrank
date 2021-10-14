@@ -8,6 +8,20 @@
 // Bob always plays first.
 fun gamingArray(arr: Array<Int>): String {
 
+    /*
+    // This is the best solution ever
+
+    var turns = 0
+    var max = 0
+    for (item in arr) {
+        if (item > max) {
+            max = item
+            turns++
+        }
+    }
+    return if (turns % 2 == 0) "ANDY" else "BOB"
+    */
+
     val winner = arrayOf("ANDY", "BOB")
     val map = mutableMapOf<Int, Int>()
 
